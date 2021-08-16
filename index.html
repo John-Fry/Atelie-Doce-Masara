@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ateliê Doce Masara</title>
+  <link rel="icon" href="./icone/icone.ico" type="" type="imagem/png" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Emilys Candy" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <section id="header" class="container-fluid">
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+        <button id="menu" class="bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="down" title="Menu">
+          <i class="bi bi-list" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+        </button>
+        <h4 class="navbar-text">Ateliê Doce Masara</h4>
+        <button id="carrinho" class="bg-transparent border-0" data-bs-toggle="tooltip" data-bs-placement="down" title="carrinho">
+          <i class="bi bi-cart-plus-fill" role="img" aria-label="Carrinho de Compras" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            </i>
+        </button>
+      </div>
+    </nav>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="7000">
+          <img src="../img/carrossel-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="../img/carrossel-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="../img/carrossel-3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Proximo</span>
+        </button>
+        <div class="logo">
+          <img src="./img/logo.png" alt="Logo" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="offcanvas">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Carrinho de Compras</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div id="dentroCarrinho" class="offcanvas-body">
+        
+
+        <div id="total">
+
+        </div>
+      </div>
+      
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><span id="menu-do-offcanvas">Menu</span></h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <button class="btn btn-info container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Sobre o site
+        </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body mb-3">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+        <a href="#sobremim"> <button type="button" class="btn btn-success container-fluid mb-3">Sobre mim</button> </a>
+        <a href="#social"> <button type="button" class="btn btn-success container-fluid mb-3">Redes Sociais</button> </a>
+        <div class="dropdown">
+          <button class="btn btn-secondary container-fluid dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Catálogo
+          </button>
+          <div class="dropdown-menu container-fluid text-center" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item card" href="#">Bolos Costumizados</a>
+            <a class="dropdown-item card" href="#">Tortas</a>
+            <a class="dropdown-item card" href="#">Docinhos</a>
+            <a class="dropdown-item card" href="#">Cupcakes</a>
+            <a class="dropdown-item card" href="#">Pudins</a>
+            <a class="dropdown-item card" href="#">Bolos de Aniversário</a>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+  <main>
+    <section class="catalogo-main">
+      <div class="catalogo-descrição">
+        <h1>Catálogo</h1>
+      </div>
+      <div class="catalogo">
+        
+      </div>
+    </section>
+    <section class="sobre-conteudo">
+      <div class="sobre-mim-conteudo">
+        <h2 id="sobremim">Samara Dias Cake Designer</h2>
+        <div class="sobre-mim-imagem">
+          <img src="./img/Samara.png" alt="Samara" style="width: 20%" />
+        </div>
+        <div class="container">
+          <p>
+            Oi! Meu nome é Samara e Bem vindo(a) a minha página! Tomarei a
+            liberdade de falar um pouco de mim: Comecei a trabalhar com doces e
+            bolos desde os 13 anos, sempre observei minha avó preparando
+            receitas e aprendi técnicas que hoje em dia me fizeram abrir meu
+            negócio no ramo da confeitaria. Minha principal motivação se resume
+            em um livro de Augusto Cury chamado "Nunca desista de seus sonhos"
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contato-conteudo">
+      <div class="contato">
+        <h2>Contate-nos:</h2>
+        <form action="">
+          <div class="form-nome">
+            <input type="text" placeholder="Nome" />
+          </div>
+          <div class="form-email">
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="form-mensagem">
+            <textarea placeholder="Digite sua mensagem" name="Mensagem" id="Mensagem" cols="30" rows="1"></textarea>
+          </div>
+          <button class="button-main border-0">
+            <i class="fas fa-arrow-alt-circle-right"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="conteudo-footer">
+      <!-- <div class="contatos">
+        <div class="row py-5">
+          <div class="container">
+            <div class="col-md-4">
+              <h3 class="pull-left">Contate-nos:</h3> 
+              <input type="text" placeholder="Nome" />
+            </div>
+            <div class="col-md-4">
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="col-md-4">
+              <textarea
+                placeholder="Digite sua mensagem"
+                name="Mensagem"
+                id="Mensagem"
+                cols="24"
+                rows="1"
+              ></textarea>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-dark">
+                <i class="fas fa-arrow-alt-circle-right"></i>
+              </button>
+            </div>
+          </div>  
+        </div>
+      </div> -->
+      <div class="social">
+        <a id="social" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/docemasara/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://bit.ly/doce-masara-whatsapp" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/lib/bootstrap.js"></script>
+  <script src="./js/main.js" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

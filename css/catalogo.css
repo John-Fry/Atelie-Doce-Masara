@@ -1,0 +1,271 @@
+/* Pagina */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Emilys Candy";
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-bottom: 0rem;
+}
+
+i {
+  font-size: 2rem;
+}
+
+/* Barra de Navegação*/
+
+#header {
+  padding: 0;
+}
+
+#catalogo-slide {
+  margin-top: 4rem;
+}
+
+.navbar {
+  background-color: #99531D;
+}
+
+.navbar .container-fluid {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #E68943;
+}
+
+.navbar .container-fluid h4, i {
+  color: black;
+}
+
+.carousel-inner {
+  position: relative;
+  max-height: 800px;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+}
+
+#atelie {
+  color: black;
+  background-color: rgb(242, 184, 116);
+  border: 2px solid transparent;
+  border-radius: 25px;
+  padding-top: 0;
+  padding-bottom: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media all and (max-width: 768px) {
+  .logo img{
+    width: 35%;
+  }
+  .logo h1 {
+    font-size: 20px;
+  }
+
+}
+
+/* Catalogo */
+
+main .catalogo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.imagem-principal {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 20px;
+}
+
+.imagem-principal h3 {
+  margin-top: 25px;
+}
+
+.imagem-principal img {
+  width: 65%;
+  border-radius: 10px;
+  border: 1px solid black;
+  max-width: 768px;
+  max-height: 768px;
+}
+
+.catalogo h3 {
+  margin-top: 15px;
+}
+
+.catalogo img {
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: transform 1s;
+}
+
+.catalogo img:hover {
+  transform: scale(1.07);
+}
+
+@media all and (max-width: 425px) {
+
+  main .catalogo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalogo img {
+    width: 75%;
+  }
+
+  .social i {
+    font-size: 35px;
+  }
+
+  textarea {
+    width: 165px;
+  }
+}
+
+main .catalogo-descrição {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+section .sobre-mim-conteudo {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2rem;
+  background-color: khaki;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+section .sobre-mim-conteudo p {
+  margin-top: 20px;
+}
+
+div.sobre-mim-imagem img {
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+section .sobre-mim-imagem {
+  padding: 2rem;
+}
+
+@media all and (max-width: 768px) {
+  div.sobre-mim-imagem {
+    display: none;
+  }
+
+  .social i {
+    font-size: 40px;
+  }
+}
+
+/* Contato */
+
+main .contato h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+input {
+  border-radius: 10px;
+  width: 200px;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+textarea {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+form .form-nome,
+.form-email,
+.form-mensagem {
+  padding: 0 6px;
+  padding-bottom: 8px;
+}
+
+button.button-main {
+  text-align: center;
+  border-radius: 10px;
+  padding: 3px;
+  width: 38px;
+  height: 42px;
+  color: white;
+  font-size: 20px;
+  border-style: none;
+}
+
+/* Footer */
+
+footer .conteudo-footer {
+  text-align: center;
+  margin-top: 20px;
+  display: grid;
+  padding: 2rem;
+  background-color: lightblue;
+}
+
+footer .social {
+  font-size: 20px;
+}
+
+div .contato {
+  margin-top: 20px;
+}
+
+.social .fa-instagram {
+  color: rgba(81, 127, 164, 0.75);
+}
+
+.social .fa-facebook {
+  color: rgba(59, 89, 152, 0.75);
+}
+
+.social .fa-whatsapp {
+  color: rgba(52, 175, 35, 0.75);
+}
+
+.social .fa-instagram:hover {
+  color: rgba(81, 127, 164, 1);
+}
+
+.social .fa-facebook:hover {
+  color: rgba(59, 89, 152, 1);
+}
+
+.social .fa-whatsapp:hover {
+  color: rgba(52, 175, 35, 1);
+}
+
+div.carousel-item img {
+  border-radius: 25px;
+  border: 1px solid black;
+}
